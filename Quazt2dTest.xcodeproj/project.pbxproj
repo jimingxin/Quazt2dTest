@@ -15,6 +15,8 @@
 		68DFEFE31CE1D71000B3DFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DFEFE11CE1D71000B3DFAF /* LaunchScreen.storyboard */; };
 		68DFEFEE1CE1D71000B3DFAF /* Quazt2dTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFEFED1CE1D71000B3DFAF /* Quazt2dTestTests.m */; };
 		68DFEFF91CE1D71000B3DFAF /* Quazt2dTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFEFF81CE1D71000B3DFAF /* Quazt2dTestUITests.m */; };
+		68DFF00A1CE1D74300B3DFAF /* LZArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFF0081CE1D74300B3DFAF /* LZArcView.m */; };
+		68DFF00F1CE1D75600B3DFAF /* LZDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DFF00E1CE1D75600B3DFAF /* LZDrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		68DFEFF41CE1D71000B3DFAF /* Quazt2dTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quazt2dTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DFEFF81CE1D71000B3DFAF /* Quazt2dTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quazt2dTestUITests.m; sourceTree = "<group>"; };
 		68DFEFFA1CE1D71000B3DFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DFF0071CE1D74300B3DFAF /* LZArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZArcView.h; sourceTree = "<group>"; };
+		68DFF0081CE1D74300B3DFAF /* LZArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZArcView.m; sourceTree = "<group>"; };
+		68DFF0091CE1D74300B3DFAF /* QuaztContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuaztContext.h; sourceTree = "<group>"; };
+		68DFF00C1CE1D75600B3DFAF /* Constrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constrant.h; sourceTree = "<group>"; };
+		68DFF00D1CE1D75600B3DFAF /* LZDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZDrawView.h; sourceTree = "<group>"; };
+		68DFF00E1CE1D75600B3DFAF /* LZDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZDrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		68DFEFD21CE1D71000B3DFAF /* Quazt2dTest */ = {
 			isa = PBXGroup;
 			children = (
+				68DFF00B1CE1D74800B3DFAF /* 绘图板 */,
+				68DFF0061CE1D73900B3DFAF /* 绘图API */,
 				68DFEFD61CE1D71000B3DFAF /* AppDelegate.h */,
 				68DFEFD71CE1D71000B3DFAF /* AppDelegate.m */,
 				68DFEFD91CE1D71000B3DFAF /* ViewController.h */,
@@ -138,6 +148,26 @@
 				68DFEFFA1CE1D71000B3DFAF /* Info.plist */,
 			);
 			path = Quazt2dTestUITests;
+			sourceTree = "<group>";
+		};
+		68DFF0061CE1D73900B3DFAF /* 绘图API */ = {
+			isa = PBXGroup;
+			children = (
+				68DFF0071CE1D74300B3DFAF /* LZArcView.h */,
+				68DFF0081CE1D74300B3DFAF /* LZArcView.m */,
+				68DFF0091CE1D74300B3DFAF /* QuaztContext.h */,
+			);
+			name = "绘图API";
+			sourceTree = "<group>";
+		};
+		68DFF00B1CE1D74800B3DFAF /* 绘图板 */ = {
+			isa = PBXGroup;
+			children = (
+				68DFF00C1CE1D75600B3DFAF /* Constrant.h */,
+				68DFF00D1CE1D75600B3DFAF /* LZDrawView.h */,
+				68DFF00E1CE1D75600B3DFAF /* LZDrawView.m */,
+			);
+			name = "绘图板";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DFF00F1CE1D75600B3DFAF /* LZDrawView.m in Sources */,
 				68DFEFDB1CE1D71000B3DFAF /* ViewController.m in Sources */,
+				68DFF00A1CE1D74300B3DFAF /* LZArcView.m in Sources */,
 				68DFEFD81CE1D71000B3DFAF /* AppDelegate.m in Sources */,
 				68DFEFD51CE1D71000B3DFAF /* main.m in Sources */,
 			);
